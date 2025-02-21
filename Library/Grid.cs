@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASCII_Pong
 {
-    internal class Grid : Vector2
+    internal class Grid
     {
         public Vector2 Cordinates {  get; set; }
         public Vector2 Size { get; set; }
@@ -14,7 +14,7 @@ namespace ASCII_Pong
 
         public Grid(Vector2 _Size) { Size = _Size; }
         public Grid(int _Size_X, int _Size_Y) { Size.x = _Size_X; Size.y = _Size_Y; }
-        public Grid(Grid grid) { Size = grid; }
+        public Grid(Grid grid) { Size = grid.Size; }
         
         public Vector2 getCords(Grid grid)
         {

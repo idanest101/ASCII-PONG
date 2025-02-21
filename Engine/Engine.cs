@@ -21,7 +21,7 @@ namespace ASCII_Pong
         void _render()
         {
             Render render = new Render();
-            render._drawSecondTest();
+            render.Run();
         }
 
         void _fetch()
